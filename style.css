@@ -5,6 +5,10 @@
     margin: 0;
 }
 
+html {
+    height: 100%;
+}
+
 header {
     background-color: grey;
     width: 100%;
@@ -23,6 +27,7 @@ header {
 
 .navbox {
     flex: 1;
+
 }
 
 
@@ -33,24 +38,31 @@ nav {
 h1 {
     background-color: silver;
     display: table;
-    /* keep the background color wrapped tight */
     padding: 5px;
     font-size: 40px;
     padding-left: 60px;
 }
 
 h2 {
-    font-size: 1.5em;
-    text-align: end;
-    float: right;
-    margin: 7px;
-    margin-top: -25px;
+
+    font-size: x-large;
+    color: black;
+    text-align: center;
+    margin-bottom: 10px;
 }
+
 
 a {
     text-decoration: underline;
     color: black;
-    flex-direction: row;
+    font-size: 25px;
+    padding: 10px;
+    font-weight: bold;
+
+}
+
+a:hover {
+    background-color: ivory;
 }
 
 ul {
@@ -63,10 +75,13 @@ li {
     display: inline;
 }
 
+
 p {
     text-align: center;
-    color: white;
+    color: royalblue;
     font-size: 20px;
+    margin-top: 40px;
+    font-weight: bolder;
 }
 
 body {
@@ -77,6 +92,7 @@ body {
     min-height: 100vh;
     display: flex;
     justify-content: flex-start;
+    background-color: black;
 }
 
 main {
@@ -84,39 +100,51 @@ main {
     flex-wrap: wrap;
 }
 
+
 .header-picture {
     background: url("https://media.istockphoto.com/photos/navy-blue-background-picture-id538526603?k=20&m=538526603&s=612x612&w=0&h=0yg2fjUNmoSZcN925-PCsscFLVIb7TqtWVTefeBZ1Gg=");
-    height: 200px;
+    height: 250px;
     width: 100%;
     background-size: cover;
     background-position: center;
 }
 
 .features {
-    flex: 4;
-    padding: 20px;
+
+    flex-direction: row;
     display: flex;
     flex-wrap: wrap;
-    justify-content: center;
-    background-color: black;
+    margin-bottom: 100px;
+    padding: 25px;
+    justify-content: space-evenly;
+
 }
 
 .card {
-    border-style: solid;
-    border-color: silver;
+    border-style: ridge;
+    border-color: black;
     border-width: 1px;
     border-radius: 10px;
     padding: 10px;
     width: 25%;
     flex: 0 0 400px;
+    background-color: silver;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+
 }
 
-.card header {
-    padding: 20px;
-    color: white;
-    font-size: 20px;
-    text-align: center;
+.card:hover {
+
+    background-color: ivory;
 }
+
+img {
+    margin: 5px 0;
+    width: calc(50% -15px);
+}
+
 
 .card img {
     width: 100%;
