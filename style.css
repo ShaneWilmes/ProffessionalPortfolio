@@ -18,11 +18,13 @@ header {
 
 .parent {
     display: flex;
+    background-image: url("assets/images/greyimg.jpg");
 
 }
 
 .namebox {
     flex: 1;
+
 }
 
 .navbox {
@@ -36,7 +38,7 @@ nav {
 }
 
 h1 {
-    background-color: silver;
+
     display: table;
     padding: 5px;
     font-size: 40px;
@@ -49,7 +51,23 @@ h2 {
     color: black;
     text-align: center;
     margin-bottom: 10px;
+    font-size: xx-large;
 }
+
+h3 {
+    font-size: medium;
+    color: black;    
+    font-size: xx-large;
+    align-items: center;
+}
+
+h4 {
+    font-size: medium;
+    color: black;    
+    font-size: xx-large;
+    align-items: center;
+}
+    
 
 
 a {
@@ -79,9 +97,18 @@ li {
 p {
     text-align: center;
     color: royalblue;
-    font-size: 20px;
+    font-size: smaller;
     margin-top: 40px;
-    font-weight: bolder;
+    font-weight: bold;
+}
+
+p1 {
+    text-align: bottom;
+    text-align: center;
+    color: royalblue;
+    font-size: smaller;
+    margin-top: 40px;
+    font-weight: bold;
 }
 
 body {
@@ -92,17 +119,25 @@ body {
     min-height: 100vh;
     display: flex;
     justify-content: flex-start;
-    background-color: black;
+    background-image: url("assets/images/tech2.jpg");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-attachment: fixed;
+    background-size: contain;
+    background-color: whitesmoke;
+
+
 }
 
 main {
     display: flex;
     flex-wrap: wrap;
+
 }
 
 
 .header-picture {
-    background: url("https://media.istockphoto.com/photos/navy-blue-background-picture-id538526603?k=20&m=538526603&s=612x612&w=0&h=0yg2fjUNmoSZcN925-PCsscFLVIb7TqtWVTefeBZ1Gg=");
+    background-image: url("assets/images/hw2headerpic.jpg");
     height: 250px;
     width: 100%;
     background-size: cover;
@@ -111,19 +146,38 @@ main {
 
 .features {
 
-    flex-direction: row;
+    flex-direction: column;
+    align-items: flex-start;
     display: flex;
     flex-wrap: wrap;
     margin-bottom: 100px;
     padding: 25px;
     justify-content: space-evenly;
 
+
+}
+
+.primarycard {
+
+    border-style: ridge;
+    border-color: black;
+    border-width: 5px;
+    border-radius: 10px;
+    padding: 10px;
+    width: 100%;
+    flex: 0 0 400px;
+    background-color: silver;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;  
+    
+
 }
 
 .card {
     border-style: ridge;
     border-color: black;
-    border-width: 1px;
+    border-width: 5px;
     border-radius: 10px;
     padding: 10px;
     width: 25%;
@@ -132,6 +186,7 @@ main {
     display: flex;
     flex-wrap: wrap;
     justify-content: space-evenly;
+
 
 }
 
