@@ -1,4 +1,4 @@
-# ProffessionalPortfolio
+# ProfessionalPortfolio
 # Homework 2
 # Starter code for a professional portfolio
 # Deployed portfolio:  
